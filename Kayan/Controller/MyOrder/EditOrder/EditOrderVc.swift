@@ -45,7 +45,7 @@ extension EditOrderVc : UICollectionViewDelegate , UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == mainview.Collorllection{
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollorEditCell", for: indexPath) as? CollorEditCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SizectionViewCell", for: indexPath) as? SizectionViewCell
             cell?.layer.cornerRadius = 5
             cell?.clipsToBounds = true
         

@@ -17,23 +17,21 @@ class TapsControllerVC: UITabBarController,UITabBarControllerDelegate  {
         //        title = "Call us".localize
         
         let BascketViewController = UINavigationController(rootViewController: BascketVC())
-        let homeViewController = UINavigationController(rootViewController: ConfirmPassVC())
-//        let galaryViewController = UINavigationController(rootViewController: OrdersVC())
-//        //        let notificationsViewController = UINavigationController(rootViewController: NotificationsViewController())
-//        let profileViewController = UINavigationController(rootViewController: ShopiingVC())
-//        let chatHomeViewController = UINavigationController(rootViewController: MoreVc())
+        let MoreViewcontroller = UINavigationController(rootViewController: MoreVC())
+        let ClientViewController = UINavigationController(rootViewController: SuplieresVc())
+
         
         BascketViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
         
-        homeViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
-//        galaryViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "shopping-bag_3_25"), selectedImage:UIImage(named: "shopping-bag_3_25"))
+        MoreViewcontroller.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
+        ClientViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage:UIImage(named: "home"))
 //        profileViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "shopping-cart_25"), selectedImage: UIImage(named: "shopping-cart_25"))
 //        chatHomeViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "more-button-interface-symbol-of-three-horizontal-aligned-dots_1_25"), selectedImage: UIImage(named: "more-button-interface-symbol-of-three-horizontal-aligned-dots_1_25"))
         //        notificationsViewController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "profile-1"), selectedImage: #imageLiteral(resourceName: "profile-1"))
         
         //tabBarController?.selectedViewController = homeViewController
         
-        let tabBarList = [BascketViewController, homeViewController]
+        let tabBarList = [BascketViewController, MoreViewcontroller,ClientViewController]
         viewControllers = tabBarList
         
         //        selectedViewController = tabBarList[2]

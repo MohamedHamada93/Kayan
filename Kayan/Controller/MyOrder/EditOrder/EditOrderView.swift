@@ -33,7 +33,7 @@ class EditOrderView: UIView {
         layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
         let coll: UICollectionView = UICollectionView (frame: .zero, collectionViewLayout: layout)
         coll.backgroundColor = .clear
-        coll.register(CollorEditCell.self, forCellWithReuseIdentifier: "CollorEditCell")
+//        coll.register(CollorEditCell.self, forCellWithReuseIdentifier: "CollorEditCell")
         coll.translatesAutoresizingMaskIntoConstraints = false
 //        coll.layer.applySketchShadow(color: #colorLiteral(red: 0.1647058824, green: 0.1411764706, blue: 0.2588235294, alpha: 1), alpha: 0.5, x: 0, y: 9, blur: 14.5, spread: 0)
         
