@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E21D817803BD50BBA597AA1551CFDA9"
+               BlueprintIdentifier = "65236E12824EFEFDFB3B822EE59C2191"
                BlueprintName = "Pods-Kayan"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-Kayan.framework">

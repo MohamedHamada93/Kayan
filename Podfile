@@ -9,5 +9,6 @@ target 'Kayan' do
 
   # Pods for Kayan
   pod "MBCircularProgressBar"
+  pod 'Cosmos'
 
 end

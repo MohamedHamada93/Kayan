@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let nav1 = UINavigationController(rootViewController: ProductRateVC())
+        let nav1 = UINavigationController(rootViewController: ProductDetailsVC())
         let nav2 = TapsControllerVC()
         window!.rootViewController = nav1
 

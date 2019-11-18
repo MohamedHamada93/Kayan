@@ -1,16 +1,20 @@
 PODS:
+  - Cosmos (19.0.3)
   - MBCircularProgressBar (0.3.5)
 
 DEPENDENCIES:
+  - Cosmos
   - MBCircularProgressBar
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cosmos
     - MBCircularProgressBar
 
 SPEC CHECKSUMS:
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
   MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
 
-PODFILE CHECKSUM: 793c97e1859ef4dedfc155101c4424768f844df8
+PODFILE CHECKSUM: c17ba804a2900067fd92a9a447490941e4ef0802
 
 COCOAPODS: 1.5.2

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class RateCell: UITableViewCell {
 
@@ -50,10 +51,10 @@ class RateCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    var RatingView : UIView = {
-       let view = UIView()
-        view.backgroundColor = .orange
-        
+    var RatingView : CosmosView = {
+       let view = CosmosView()
+        view.settings.fillMode = .full
+        view.settings.starSize = 16
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -101,7 +102,12 @@ class RateCell: UITableViewCell {
             DescLabel.trailingAnchor.constraint(equalTo: tablecell.trailingAnchor, constant: -10),
             DescLabel.heightAnchor.constraint(equalToConstant: 90)
             ])
-        
+        tablecell.addSubview(RatingView)
+        NSLayoutConstraint.activate([
+            RatingView.topAnchor.constraint(equalTo:DescLabel.bottomAnchor, constant: 0),
+            RatingView.trailingAnchor.constraint(equalTo: tablecell.trailingAnchor, constant: -10),
+            RatingView.heightAnchor.constraint(equalToConstant: 20)
+            ])
         
     }
     
